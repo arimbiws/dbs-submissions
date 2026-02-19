@@ -3,10 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Blabber Buzz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
-    <script src="./assets/scripts/script.js"></script>
+    <header>
+      <div class="container header-container">
+        <h1 class="logo">Blabber Buzz</h1>
+        <nav id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#profile">About</a></li>
+            <li>
+              <a href="https://www.dicoding.com/users/arimbi8/academies" target="_blank">Dicoding</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </header>
+
+    <main class="container main-layout">
+      <div class="content">
+        <section class="hero">
+          <article class="hero-text">
+            <h2>Discover Languages <br />Around the World</h2>
+            <p>Explore the beauty, diversity, and cultural richness of 7,000+ languages. Every language is a unique window into the human experience.</p>
+            <a href="#languages" class="btn">Explore Languages</a>
+          </article>
+          <div class="hero-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+          </div>
+        </section>
+
+        <section id="languages" class="languages">
+          <h2 class="headline">Popular World Languages</h2>
+          <div class="product-list">
+            <article class="product-card">
+              <img src="assets/images/chinese.jpeg" alt="Chinese writing characters on a red background" />
+              <h3>Chinese</h3>
+              <p>Spoken widely across China and Taiwan, Mandarin has the largest number of native speakers in the world.</p>
+              <h4 class="speakers">1.3 Billion Speakers</h4>
+            </article>
+            <article class="product-card">
+              <img src="assets/images/hindi.jpeg" alt="Hindi calligraphy script illustration" />
+              <h3>Hindi</h3>
+              <p>Hindi is one of India's official languages and plays a major role in South Asian culture and cinema.</p>
+              <h4 class="speakers">609 Million Speakers</h4>
+            </article>
+            <article class="product-card">
+              <img src="assets/images/russian.jpeg" alt="Russian language concept illustration showing architecture" />
+              <h3>Russian</h3>
+              <p>Russian is widely spoken across Eastern Europe and Central Asia and is one of the UN official languages.</p>
+              <h4 class="speakers">253 Million Speakers</h4>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <aside id="profile" class="profile-aside">
+        <div class="sticky-wrapper">
+          <article class="profile-card">
+            <div class="profile-header-gradient"></div>
+
+            <div class="profile-avatar-container">
+              <img src="assets/images/profile.jpeg" alt="John Doe's Professional Avatar" class="profile-img" />
+              <span class="online-status"></span>
+            </div>
+
+            <div class="profile-body">
+              <h3>Arimbi Wirasetia</h3>
+              <p class="title">Full-Stack Web Developer</p>
+
+              <div class="badge-container">
+                <span class="badge gold">Javascript</span>
+                <span class="badge blue">Golang</span>
+                <span class="badge green">Tailwind</span>
+                <span class="badge red">Laravel</span>
+              </div>
+
+              <hr class="divider" />
+
+              <p class="bio">Language enthusiast and a developer. Currently exploring programming skills at <b>Coding Camp powered by DBS Foundation</b> .</p>
+
+              <div class="stats-row">
+                <div class="stat-item">
+                  <strong>12</strong>
+                  <span>Projects</span>
+                </div>
+                <div class="stat-item">
+                  <strong>8</strong>
+                  <span>Certificates</span>
+                </div>
+              </div>
+
+              <div class="profile-actions">
+                <a href="https://github.com/arimbiws/dbs-submissions" class="btn-outline">View Portfolio</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </main>
+
+    <footer id="footer">
+      <div class="container footer-container">
+        <p>Blabber Buzz &copy; 2026 | All Rights Reserved.</p>
+        <p>Email: hello@blabberbuzz.com</p>
+      </div>
+    </footer>
+
+    <script src="assets/scripts/script.js"></script>
   </body>
 </html>
