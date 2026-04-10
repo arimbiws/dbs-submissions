@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  redis:
+    image: redis:latest
+    container_name: openjob-redis
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: openjob-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    restart: always
